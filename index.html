@@ -27,16 +27,70 @@
       <div class="nav-container">
         <h1 class="logo">Siddesh<span class="accent">.</span></h1>
         <nav class="nav-menu" aria-label="Section navigation">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#publications">Publications &amp; Achievements</a>
+          <a class="nav-link" href="#publications">Publications & Achievements</a>
           <a class="nav-link" href="#education">Education</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
-
     <main class="main-content">
-      <section id="projects" class="section">
+      <section class="section" id="about">
+        <div class="page-header">
+          <h2 class="page-title">About</h2>
+          <p class="page-subtitle">Semiconductor Design Verification & Validation | DSP Silicon | RISC‑V</p>
+        </div>
+        <div class="about-content">
+          <p>I'm a Design Verification and Silicon Validation engineer focused on how architecture decisions translate into measurable performance on real silicon.</p>
+          <p>Experience across RISC‑V core/SoC DV, DSP subsystem bring‑up and validation, and accelerator RTL design and performance research.</p>
+        </div>
+      </section>
+      <section class="section" id="experience">
+        <div class="page-header">
+          <h2 class="page-title">Professional Experience</h2>
+          <p class="page-subtitle">Semiconductor design, DV, and silicon validation</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">June 2025 – Sept 2025</div>
+            <div class="timeline-details">
+              <h3 class="position-title">DSP Silicon Validation Intern, Qualcomm — Austin, TX</h3>
+              <ul class="section-list">
+                <li>Low-level bring-up and validation of DSP SoC blocks</li>
+                <li>Assembly-level test vectors, lab workflows, and HW/SW debug</li>
+                <li>Developed test vectors and lab tests with T-32 debugger</li>
+                <li>Automated QDSP validation flows using Python</li>
+                <li>Configured and debugged silicon validation hardware/software</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">Dec 2022 – June 2024</div>
+            <div class="timeline-details">
+              <h3 class="position-title">Design Verification Intern, Vyoma Systems — SHAKTI Group, IIT Madras — India</h3>
+              <ul class="section-list">
+                <li>RISC‑V SoC verification and automated test generation</li>
+                <li>Generated tests for RV64IMAFDC, performance verification plans</li>
+                <li>Used MicroTESK and open simulators</li>
+                <li>DV regressions, waveform debug using Python/Ruby</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">June 2023 – Sept 2023</div>
+            <div class="timeline-details">
+              <h3 class="position-title">Performance Verification Research Intern, CASL — University of Maryland — College Park, MD</h3>
+              <ul class="section-list">
+                <li>RTL design, modeling, verification for sparse-matrix accelerator (ALRESCHA)</li>
+                <li>Implemented Sym‑GS, GeM‑V kernels, optimized sparse matrix multiplication</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="projects">
         <div class="page-header">
           <h2 class="page-title">Technical Projects</h2>
           <p class="page-subtitle">Selected academic and verification projects</p>
@@ -71,8 +125,7 @@
           </article>
         </div>
       </section>
-
-      <section id="publications" class="section">
+      <section class="section" id="publications">
         <div class="page-header">
           <h2 class="page-title">Publications and Achievements</h2>
           <p class="page-subtitle">Peer-reviewed and community contributions</p>
@@ -82,8 +135,7 @@
           <li>Teaching Assistant for Processor Design Verification Hackathon'23, supported by RISC-V International and IIT-Madras.</li>
         </ul>
       </section>
-
-      <section id="education" class="section">
+      <section class="section" id="education">
         <div class="page-header">
           <h2 class="page-title">Education</h2>
           <p class="page-subtitle">Academic background and relevant coursework</p>
@@ -95,7 +147,7 @@
               <h3 class="degree-title">M.S., Electrical and Computer Engineering</h3>
               <h4 class="school-name">Portland State University</h4>
               <p class="page-subtitle">GPA: 3.8/4.0</p>
-              <p class="page-subtitle"><small>Relevant Courses: Computer Architecture, Microprocessor System Design, System-Verilog for Design and Verification, Pre-Silicon Validation, Post-Silicon Validation, Hardware for AI, Python Scripting</small></p>
+              <p class="page-subtitle">Relevant Courses: Computer Architecture, Microprocessor System Design, System-Verilog for Design and Verification, Pre-Silicon Validation, Post-Silicon Validation, Hardware for AI, Python Scripting</p>
             </div>
           </article>
           <article class="education-item">
@@ -108,11 +160,10 @@
           </article>
         </div>
       </section>
-
-      <section id="contact" class="section">
+      <section class="section" id="contact">
         <div class="page-header">
           <h2 class="page-title">Get In Touch</h2>
-          <p class="page-subtitle">Let’s connect on semiconductor design, DV, or silicon validation</p>
+          <p class="page-subtitle">Let's connect on semiconductor design, DV, or silicon validation</p>
         </div>
         <div class="contact-grid">
           <div class="contact-methods">
@@ -126,18 +177,16 @@
             </div>
           </div>
           <form class="message-form" onsubmit="event.preventDefault();">
-            <div class="form-group"><label for="name">Name *</label><input id="name" name="name" type="text" required /></div>
-            <div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" required /></div>
-            <div class="form-group"><label for="subject">Subject *</label><input id="subject" name="subject" type="text" required /></div>
+            <div class="form-group"><label for="name">Name *</label><input type="text" id="name" name="name" required /></div>
+            <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required /></div>
+            <div class="form-group"><label for="subject">Subject *</label><input type="text" id="subject" name="subject" required /></div>
             <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="6" required></textarea></div>
-            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
         </div>
       </section>
     </main>
-
     <footer class="footer">© 2025 Siddesh Patil. All rights reserved.</footer>
-
     <script>
       const links = document.querySelectorAll('.nav-link');
       const sections = [...document.querySelectorAll('section')];
