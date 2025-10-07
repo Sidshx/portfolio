@@ -1,248 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siddesh Patil — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
-    .about-photo{display:flex;justify-content:center;align-items:center;height:100%}
-    .profile-img{max-width:280px;width:100%;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.25);padding-left:16px;border-left:16px solid transparent}
-    @media (max-width:800px){.about-grid{grid-template-columns:1fr}}
-    .page-subtitle small{opacity:.8}
-    .achievements{margin:0.5rem 0 0 1rem}
-    .achievements li{margin:0.25rem 0}
-    .tech-tag,.skill-chip,.tag{display:inline-block;margin:.2rem .3rem;padding:.2rem .5rem;border-radius:999px;background:#eef;font-size:.85rem}
-    .timeline{display:grid;gap:1.25rem}
-    .timeline-item{display:grid;grid-template-columns:140px 1fr;gap:1rem}
-    .timeline-date{font-weight:600}
-    @media (max-width:700px){.timeline-item{grid-template-columns:1fr}}
-  </style>
-</head>
-<body>
-  <header class="navbar">
-    <div class="nav-container">
-      <h1 class="logo">Siddesh<span class="accent">.</span></h1>
-      <nav class="nav-menu" aria-label="Section navigation">
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#experience">Experience</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#education">Education</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main-content">
-    <section id="about" class="section">
-      <div class="page-header">
-        <h2 class="page-title">About Me</h2>
-        <p class="page-subtitle">Semiconductor Design Verification & Validation | DSP Silicon | RISC‑V</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddesh Patil — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+      .about-photo{display:flex;justify-content:center;align-items:center;height:100%}
+      .profile-img{max-width:280px;width:100%;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.25);padding-left:16px;border-left:16px solid transparent}
+      @media (max-width:800px){.about-grid{grid-template-columns:1fr}}
+      .page-subtitle small{opacity:.8}
+      .achievements{margin:0.5rem 0 0 1rem}
+      .achievements li{margin:0.25rem 0}
+      .tech-tag,.skill-chip,.tag{display:inline-block;margin:.2rem .3rem;padding:.2rem .5rem;border-radius:999px;background:#eef;font-size:.85rem}
+      .timeline{display:grid;gap:1.25rem}
+      .timeline-item{display:grid;grid-template-columns:140px 1fr;gap:1rem}
+      .timeline-date{font-weight:600}
+      @media (max-width:700px){.timeline-item{grid-template-columns:1fr}}
+      .section-list{margin:0.5rem 0 0 1.25rem}
+      .section-list li{margin:0.25rem 0}
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Siddesh<span class="accent">.</span></h1>
+        <nav class="nav-menu" aria-label="Section navigation">
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#publications">Publications &amp; Achievements</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
       </div>
-      <div class="about-grid">
-        <div class="about-photo">
-          <img src="IMG_20240928_183821_470.jpg" alt="Siddesh Patil profile photo" class="profile-img" />
+    </header>
+
+    <main class="main-content">
+      <section id="projects" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Technical Projects</h2>
+          <p class="page-subtitle">Selected academic and verification projects</p>
         </div>
-        <div class="about-text">
-          <p>I’m a Design Verification and Silicon Validation engineer focused on how architecture decisions translate into measurable performance on real silicon.</p>
-          <p>Experience across RISC‑V core/SoC DV, DSP subsystem bring‑up and validation, and accelerator RTL design and performance research.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <header class="project-header">
+              <h3 class="project-title">RISC-V RV32IM Instruction Set Simulator</h3>
+              <div class="project-tags"><span class="tag">RISC-V</span><span class="tag">ISS</span><span class="tag">C/C++/Python</span></div>
+            </header>
+            <div class="project-content">
+              Jan 2025 – Mar 2025
+            </div>
+          </article>
+          <article class="project-card">
+            <header class="project-header">
+              <h3 class="project-title">Multi-Core MESI Last-Level Cache Simulator</h3>
+              <div class="project-tags"><span class="tag">Architecture</span><span class="tag">MESI</span><span class="tag">Cache</span></div>
+            </header>
+            <div class="project-content">
+              Oct 2024 – Dec 2024
+            </div>
+          </article>
+          <article class="project-card">
+            <header class="project-header">
+              <h3 class="project-title">Verification Support for RISC-V Vector Enabled Processors</h3>
+              <div class="project-tags"><span class="tag">RISC-V</span><span class="tag">Vectors</span><span class="tag">DV</span></div>
+            </header>
+            <div class="project-content">
+              Aug 2023 – June 2024
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="experience" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Professional Experience</h2>
-        <p class="page-subtitle">Semiconductor design, DV, and silicon validation</p>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-date">June 2025 – Sept 2025</div>
-          <div class="timeline-content">
-            <h3 class="job-title">DSP Silicon Validation Intern</h3>
-            <h4 class="company">Qualcomm — Austin, TX</h4>
-            <p class="job-description">Low-level bring‑up and validation of DSP SoC blocks; assembly‑level test vectors, lab workflows, and HW/SW debug.</p>
-            <ul class="achievements">
-              <li>Developed assembly test vectors and lab tests using the T‑32 debugger for low‑level validation.</li>
-              <li>Automated QDSP validation flows with Python; configured HW/SW setups for silicon validation.</li>
-              <li>Analyzed failures, debugged DSP issues, and documented results to accelerate validation cycles.</li>
-            </ul>
-            <div class="tech-stack"><span class="tech-tag">DSP</span><span class="tech-tag">Assembly</span><span class="tech-tag">T‑32</span><span class="tech-tag">Python</span><span class="tech-tag">Lab bring‑up</span></div>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-date">Dec 2022 – June 2024</div>
-          <div class="timeline-content">
-            <h3 class="job-title">Design Verification Intern</h3>
-            <h4 class="company">Vyoma Systems — SHAKTI Group, IIT Madras — India</h4>
-            <p class="job-description">RISC‑V SoC verification with coverage‑driven methodology and automated test generation.</p>
-            <ul class="achievements">
-              <li>Created performance verification plans; generated 100+ tests for RV64IMAFDC extensions.</li>
-              <li>Automated generation and coverage for 140+ RV instructions with MicroTESK.</li>
-              <li>Owned DV environment setup and regressions; debugged failures using open‑source simulators, waveform viewers, and Python/Ruby.</li>
-            </ul>
-            <div class="tech-stack"><span class="tech-tag">RISC‑V</span><span class="tech-tag">Coverage DV</span><span class="tech-tag">MicroTESK</span><span class="tech-tag">Python</span><span class="tech-tag">Ruby</span></div>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-date">June 2023 – Sept 2023</div>
-          <div class="timeline-content">
-            <h3 class="job-title">Performance Verification Research Intern</h3>
-            <h4 class="company">CASL — University of Maryland — College Park, MD</h4>
-            <p class="job-description">RTL design, modeling, and verification for a sparse‑matrix accelerator (ALRESCHA) with kernel‑level optimizations.</p>
-            <ul class="achievements">
-              <li>Designed RTL in Verilog; built and simulated 15+ verification test cases.</li>
-              <li>Implemented Sym‑GS and GeM‑V kernels; optimized sparse matrix multiplication paths.</li>
-              <li>Achieved 20% throughput increase using GPU architecture principles for sparse acceleration.</li>
-            </ul>
-            <div class="tech-stack"><span class="tech-tag">Verilog</span><span class="tech-tag">RTL</span><span class="tech-tag">Accelerators</span><span class="tech-tag">HPC</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Projects</h2>
-        <p class="page-subtitle">DV environments, tools, and silicon‑adjacent projects</p>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card">
-          <header class="project-header">
-            <h3 class="project-title">RISC‑V ISA Compliance & Randomized DV</h3>
-            <div class="project-tags"><span class="tag">RISC‑V</span><span class="tag">UVM‑lite</span><span class="tag">Coverage</span><span class="tag">Python</span></div>
-          </header>
-          <div class="project-content">Lightweight DV environment for RV64 core features with randomized stimulus, functional coverage points, and automated regressions.
-            <ul class="project-features"><li>Instruction streams via Python generators; scoreboard and reference checks.</li><li>Branch/CSR/FP coverage closure; nightly regressions with triage reports.</li></ul>
-          </div>
-        </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3 class="project-title">DSP Subsystem Bring‑up Toolkit</h3>
-            <div class="project-tags"><span class="tag">DSP</span><span class="tag">Assembly</span><span class="tag">T‑32</span><span class="tag">Python</span></div>
-          </header>
-          <div class="project-content">Scripts and procedures to initialize clocks/resets, load images, and run targeted diagnostics for lab workflows.
-            <ul class="project-features"><li>Deterministic test vectors and log capture for reproducible silicon triage.</li><li>Golden logs and diff‑based failure analysis.</li></ul>
-          </div>
-        </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3 class="project-title">Sparse Matrix Accelerator Modeling</h3>
-            <div class="project-tags"><span class="tag">Verilog</span><span class="tag">HPC</span><span class="tag">Performance</span></div>
-          </header>
-          <div class="project-content">Modeled Sym‑GS/GeM‑V kernels and measured throughput/latency across variants; informed RTL choices.</div>
-        </article>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Education</h2>
-        <p class="page-subtitle">Academic foundations</p>
-      </div>
-      <div class="education-timeline">
-        <article class="education-item">
-          <div class="education-date"><span class="date-badge">M.S. (In Progress)</span></div>
-          <div class="education-details">
-            <h3 class="degree-title">M.S., Electrical & Computer Engineering</h3>
-            <h4 class="school-name">Portland State University</h4>
-            <p class="page-subtitle"><small>Focus: Computer Architecture; Design Verification & Validation</small></p>
-          </div>
-        </article>
-        <article class="education-item">
-          <div class="education-date"><span class="date-badge">2020 – 2024</span></div>
-          <div class="education-details">
-            <h3 class="degree-title">B.E., Computer Engineering</h3>
-            <h4 class="school-name">Mumbai University</h4>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Skills</h2>
-        <p class="page-subtitle">Technologies and tools</p>
-      </div>
-      <div class="skills-grid-simple">
-        <div class="skill-chip">RISC‑V</div>
-        <div class="skill-chip">Design Verification</div>
-        <div class="skill-chip">Coverage & Randomization</div>
-        <div class="skill-chip">Verilog/RTL</div>
-        <div class="skill-chip">DSP</div>
-        <div class="skill-chip">Python</div>
-        <div class="skill-chip">Lab Bring‑up</div>
-        <div class="skill-chip">Debug & Waveforms</div>
-        <div class="skill-chip">Scripting (Python, Ruby)</div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Get In Touch</h2>
-        <p class="page-subtitle">Let’s connect on semiconductor design, DV, or silicon validation</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-methods">
-          <div class="contact-item"><div class="contact-icon">📧</div><div class="contact-details">Email<br/>siddesh1patil@gmail.com</div></div>
-          <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-details">Location<br/>Portland, OR, USA</div></div>
-          <div class="contact-item"><div class="contact-icon">💼</div><div class="contact-details">LinkedIn<br/>linkedin.com/in/siddesh-patil-497b50206/</div></div>
-          <div class="social-icons">
-            <a class="social-link" href="https://github.com/Sidshx" target="_blank" rel="noopener">GitHub</a>
-            <a class="social-link" href="https://www.linkedin.com/in/siddesh-patil-497b50206/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="social-link" href="mailto:siddesh1patil@gmail.com" target="_blank" rel="noopener">Email</a>
-          </div>
+      <section id="publications" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Publications and Achievements</h2>
+          <p class="page-subtitle">Peer-reviewed and community contributions</p>
         </div>
-        <form class="message-form" onsubmit="event.preventDefault();">
-          <div class="form-group"><label for="name">Name *</label><input id="name" name="name" type="text" required /></div>
-          <div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" required /></div>
-          <div class="form-group"><label for="subject">Subject *</label><input id="subject" name="subject" type="text" required /></div>
-          <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="6" required></textarea></div>
-          <button class="btn btn-primary" type="submit">Send Message</button>
-        </form>
-      </div>
+        <ul class="section-list">
+          <li>Patil, S., Jadhav, P. (2023). 32-bit RISC-V CPU core on Logisim. ArXiv preprint: arXiv:2312.01455.</li>
+          <li>Teaching Assistant for Processor Design Verification Hackathon'23, supported by RISC-V International and IIT-Madras.</li>
+        </ul>
+      </section>
 
-      <div class="availability">
-        <div class="status-card">
-          <div class="status-indicator available"></div>
-          <div class="status-info">
-            Available for New Opportunities
-            <ul class="status-details">
-              <li>Open to full-time roles</li>
-              <li>Available for internships</li>
-              <li>Interested in collaborations</li>
-              <li>Always learning new technologies</li>
-            </ul>
-          </div>
+      <section id="education" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Education</h2>
+          <p class="page-subtitle">Academic background and relevant coursework</p>
         </div>
-      </div>
+        <div class="education-timeline">
+          <article class="education-item">
+            <div class="education-date"><span class="date-badge">Expected May 2026</span></div>
+            <div class="education-details">
+              <h3 class="degree-title">M.S., Electrical and Computer Engineering</h3>
+              <h4 class="school-name">Portland State University</h4>
+              <p class="page-subtitle">GPA: 3.8/4.0</p>
+              <p class="page-subtitle"><small>Relevant Courses: Computer Architecture, Microprocessor System Design, System-Verilog for Design and Verification, Pre-Silicon Validation, Post-Silicon Validation, Hardware for AI, Python Scripting</small></p>
+            </div>
+          </article>
+          <article class="education-item">
+            <div class="education-date"><span class="date-badge">June 2024</span></div>
+            <div class="education-details">
+              <h3 class="degree-title">B.Tech., Electronics Engineering</h3>
+              <h4 class="school-name">Veermata Jijabai Technological Institute, Mumbai</h4>
+              <p class="page-subtitle">First class with distinction</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <div class="response-grid">
-        <div class="response-item"><div class="response-icon">⚡</div>Quick Response<br/>Typically within 24 hours on business days.</div>
-        <div class="response-item"><div class="response-icon">💬</div>Detailed Discussion<br/>Understanding needs before proposing solutions.</div>
-        <div class="response-item"><div class="response-icon">🎯</div>Professional Approach<br/>Focused, reliable and detail‑oriented.</div>
-      </div>
-    </section>
-  </main>
+      <section id="contact" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Get In Touch</h2>
+          <p class="page-subtitle">Let’s connect on semiconductor design, DV, or silicon validation</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-methods">
+            <div class="contact-item"><div class="contact-icon">📧</div><div class="contact-details">Email<br/>siddesh1patil@gmail.com</div></div>
+            <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-details">Location<br/>Portland, OR, USA</div></div>
+            <div class="contact-item"><div class="contact-icon">💼</div><div class="contact-details">LinkedIn<br/>linkedin.com/in/siddesh-patil-497b50206/</div></div>
+            <div class="social-icons">
+              <a class="social-link" href="https://github.com/Sidshx" target="_blank" rel="noopener">GitHub</a>
+              <a class="social-link" href="https://www.linkedin.com/in/siddesh-patil-497b50206/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="social-link" href="mailto:siddesh1patil@gmail.com" target="_blank" rel="noopener">Email</a>
+            </div>
+          </div>
+          <form class="message-form" onsubmit="event.preventDefault();">
+            <div class="form-group"><label for="name">Name *</label><input id="name" name="name" type="text" required /></div>
+            <div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" required /></div>
+            <div class="form-group"><label for="subject">Subject *</label><input id="subject" name="subject" type="text" required /></div>
+            <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="6" required></textarea></div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-  <footer class="footer">© 2025 Siddesh Patil. All rights reserved.</footer>
+    <footer class="footer">© 2025 Siddesh Patil. All rights reserved.</footer>
 
-  <script>
-    const links = document.querySelectorAll('.nav-link');
-    const sections = [...document.querySelectorAll('section')];
-    const setActive = () => {
-      const y = window.scrollY + 100;
-      let activeId = sections[0]?.id;
-      for (const s of sections) {
-        const top = s.offsetTop; const bottom = top + s.offsetHeight;
-        if (y >= top && y < bottom) activeId = s.id;
-      }
-      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + activeId));
-    };
-    window.addEventListener('scroll', setActive);
-    window.addEventListener('load', setActive);
-  </script>
-</body>
+    <script>
+      const links = document.querySelectorAll('.nav-link');
+      const sections = [...document.querySelectorAll('section')];
+      const setActive = () => {
+        const y = window.scrollY + 100;
+        let activeId = sections[0]?.id;
+        for (const s of sections) {
+          const top = s.offsetTop; const bottom = top + s.offsetHeight;
+          if (y >= top && y < bottom) activeId = s.id;
+        }
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + activeId));
+      };
+      window.addEventListener('scroll', setActive);
+      window.addEventListener('load', setActive);
+    </script>
+  </body>
 </html>
