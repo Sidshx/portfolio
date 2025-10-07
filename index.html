@@ -1,283 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siddesh Patil — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="navbar">
-    <div class="nav-container">
-      <h1 class="logo">Siddesh<span class="accent">.</span></h1>
-      <nav class="nav-menu" aria-label="Section navigation">
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#experience">Experience</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#education">Education</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddesh Patil — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+      .about-photo{display:flex;justify-content:center}
+      .profile-img{max-width:280px;width:100%;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+      @media (max-width: 800px){.about-grid{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Siddesh<span class="accent">.</span></h1>
+        <nav class="nav-menu" aria-label="Section navigation">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <main class="main-content">
-    <section id="about" class="section">
-      <div class="page-header">
-        <h2 class="page-title">About Me</h2>
-        <p class="page-subtitle">Design Verification & Validation Enthusiast</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            What draws me to silicon is a simple question: how do architecture choices turn into real 
-            performance, and how does speed scale as everything shrinks under Dennard scaling?
-          </p>
-          <p>
-            In undergrad, that question moved from textbooks to the bench—RISC‑V and FPGAs became the 
-            sandbox where building, testing, and catching edge cases made theory feel real.
-          </p>
-          <p>
-            Currently pursuing my M.S. in Electrical and Computer Engineering at Portland State 
-            University, focused on Computer Architecture and Design Verification & Validation. And 
-            building depth in latest architectures, reusable testbenches, exhaustive verification,
-            constrained‑random stimulus, and coverage‑driven closure.
-          </p>
+    <main class="main-content">
+      <section id="about" class="section">
+        <div class="page-header">
+          <h2 class="page-title">About Me</h2>
+          <p class="page-subtitle">Design Verification &amp; Validation Enthusiast</p>
         </div>
-        <div class="about-stats">
-          <div class="stat-item"><span class="stat-number">3+</span><span class="stat-label">Years Experience</span></div>
-          <div class="stat-item"><span class="stat-number">15+</span><span class="stat-label">Projects Completed</span></div>
-          <div class="stat-item"><span class="stat-number">10+</span><span class="stat-label">Technologies Mastered</span></div>
-        </div>
-      </div>
-    </section>
 
-    <section id="experience" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Professional Experience</h2>
-        <p class="page-subtitle">Building scalable solutions and driving technical innovation</p>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-date">Sep 2024 - Present</div>
-          <div class="timeline-content">
-            <h3 class="job-title">Graduate Student</h3>
-            <h4 class="company">Northeastern University</h4>
-            <p class="job-description">
-              Master's in Information Systems focusing on software engineering, data management, and cloud technologies.
+        <div class="about-grid">
+          <!-- Replace stats with profile photo -->
+          <div class="about-photo">
+            <img src="IMG_20240928_183821_470.jpg" alt="Siddesh Patil profile photo" class="profile-img" />
+          </div>
+
+          <div class="about-text">
+            <p>
+              What draws me to silicon is a simple question: how do architecture choices turn into real
+              performance, and how does speed scale as everything shrinks under Dennard scaling?
             </p>
-            <ul class="achievements">
-              <li>Advanced technical coursework and research</li>
-              <li>Collaborative projects and initiatives</li>
-              <li>Data engineering and analytics focus</li>
-              <li>Active industry networking</li>
-            </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">Data Analytics</span>
-              <span class="tech-tag">Cloud</span>
-              <span class="tech-tag">Software Engineering</span>
-              <span class="tech-tag">Research</span>
-            </div>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-date">Oct 2021 - Aug 2024</div>
-          <div class="timeline-content">
-            <h3 class="job-title">Software Engineer</h3>
-            <h4 class="company">Persistent Systems</h4>
-            <p class="job-description">
-              Developed enterprise applications, collaborating across teams to deliver high-quality software using agile practices.
+            <p>
+              In undergrad, that question moved from textbooks to the bench—RISC‑V and FPGAs became the
+              sandbox where building, testing, and catching edge cases made theory feel real.
             </p>
-            <ul class="achievements">
-              <li>Designed scalable backend services (Java, Spring Boot)</li>
-              <li>Built responsive web apps</li>
-              <li>Optimized databases and APIs</li>
-              <li>Code reviews and CI/CD contributions</li>
-            </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">Spring Boot</span>
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">REST</span>
-            </div>
+            <p>
+              Currently pursuing my M.S. in Electrical and Computer Engineering at Portland State
+              University, focused on Computer Architecture and Design Verification &amp; Validation. And
+              building depth in latest architectures, reusable testbenches, exhaustive verification,
+              constrained‑random stimulus, and coverage‑driven closure.
+            </p>
           </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-date">Jan 2021 - Sep 2021</div>
-          <div class="timeline-content">
-            <h3 class="job-title">Software Engineering Intern</h3>
-            <h4 class="company">Persistent Systems</h4>
-            <ul class="achievements">
-              <li>Web components with modern JS</li>
-              <li>Backend support and API integration</li>
-              <li>Agile participation and collaboration</li>
-            </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">HTML/CSS</span>
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">Git</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
 
-    <section id="projects" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Projects</h2>
-        <p class="page-subtitle">Full-stack development, AI integration, and scalable solutions</p>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card">
-          <header class="project-header">
-            <h3 class="project-title">AI-Powered Chatbot Platform</h3>
-            <div class="project-tags">
-              <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">React</span><span class="tag">Node.js</span>
-            </div>
-          </header>
-          <div class="project-content">
-            <p>Intent recognition, contextual conversations, multi-language support, and analytics dashboard.</p>
-            <ul class="project-features">
-              <li>NLP with BERT</li><li>Multi-turn conversations</li><li>Sentiment analysis</li><li>Integrations</li>
-            </ul>
+          <!-- Old metrics removed per instruction
+          <div class="about-stats">
+            <div class="stat-item"><span class="stat-number">3+</span><span class="stat-label">Years Experience</span></div>
+            <div class="stat-item"><span class="stat-number">15+</span><span class="stat-label">Projects Completed</span></div>
+            <div class="stat-item"><span class="stat-number">10+</span><span class="stat-label">Technologies Mastered</span></div>
           </div>
-          <div class="project-links">
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3 class="project-title">E-Commerce Analytics Dashboard</h3>
-            <div class="project-tags">
-              <span class="tag">React</span><span class="tag">D3.js</span><span class="tag">Express</span><span class="tag">MongoDB</span>
-            </div>
-          </header>
-          <div class="project-content">
-            <p>Real-time visualization, forecasting, and customer behavior insights with automated reporting.</p>
-            <ul class="project-features">
-              <li>Interactive charts</li><li>Segmentation</li><li>Predictive analytics</li>
-            </ul>
-          </div>
-          <div class="project-links">
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3 class="project-title">Supply Chain Management System</h3>
-            <div class="project-tags">
-              <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">Angular</span>
-            </div>
-          </header>
-          <div class="project-content">
-            <p>Inventory tracking, supplier management, automated procurement with microservices architecture.</p>
-          </div>
-          <div class="project-links">
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </section>
+          -->
+        </div>
+      </section>
 
-    <section id="education" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Education</h2>
-        <p class="page-subtitle">Academic journey and continuous learning</p>
-      </div>
-      <div class="education-timeline">
-        <article class="education-item">
-          <div class="education-date"><span class="date-badge">2020 - 2024</span></div>
-          <div class="education-details">
-            <h3 class="degree-title">B.E. in Computer Engineering</h3>
-            <h4 class="school-name">Mumbai University</h4>
+      <!-- Remaining sections unchanged -->
+      <section id="experience" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Professional Experience</h2>
+          <p class="page-subtitle">Building scalable solutions and driving technical innovation</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">Sep 2024 - Present</div>
+            <div class="timeline-content">
+              <h3 class="job-title">Graduate Student</h3>
+              <h4 class="company">Northeastern University</h4>
+              <p class="job-description">
+                Master's in Information Systems focusing on software engineering, data management, and cloud technologies.
+              </p>
+              <ul class="achievements">
+                <li>Advanced technical coursework and research</li>
+                <li>Collaborative projects and initiatives</li>
+                <li>Data engineering and analytics focus</li>
+                <li>Active industry networking</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">Data Analytics</span>
+                <span class="tech-tag">Cloud</span>
+                <span class="tech-tag">Software Engineering</span>
+                <span class="tech-tag">Research</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Oct 2021 - Aug 2024</div>
+            <div class="timeline-content">
+              <h3 class="job-title">Software Engineer</h3>
+              <h4 class="company">Persistent Systems</h4>
+              <p class="job-description">
+                Developed enterprise applications, collaborating across teams to deliver high-quality software using agile practices.
+              </p>
+              <ul class="achievements">
+                <li>Designed scalable backend services (Java, Spring Boot)</li>
+                <li>Built responsive web apps</li>
+                <li>Optimized databases and APIs</li>
+                <li>Code reviews and CI/CD contributions</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">REST</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Jan 2021 - Sep 2021</div>
+            <div class="timeline-content">
+              <h3 class="job-title">Software Engineering Intern</h3>
+              <h4 class="company">Persistent Systems</h4>
+              <ul class="achievements">
+                <li>Web components with modern JS</li>
+                <li>Backend support and API integration</li>
+                <li>Agile participation and collaboration</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Git</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Projects</h2>
+          <p class="page-subtitle">Full-stack development, AI integration, and scalable solutions</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <header class="project-header">
+              <h3 class="project-title">AI-Powered Chatbot Platform</h3>
+              <div class="project-tags">
+                <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">React</span><span class="tag">Node.js</span>
+              </div>
+            </header>
+            <div class="project-content">
+              Intent recognition, contextual conversations, multi-language support, and analytics dashboard.
+              <ul class="project-features">
+                <li>NLP with BERT</li><li>Multi-turn conversations</li><li>Sentiment analysis</li><li>Integrations</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <header class="project-header">
+              <h3 class="project-title">E-Commerce Analytics Dashboard</h3>
+              <div class="project-tags">
+                <span class="tag">React</span><span class="tag">D3.js</span><span class="tag">Express</span><span class="tag">MongoDB</span>
+              </div>
+            </header>
+            <div class="project-content">
+              Real-time visualization, forecasting, and customer behavior insights with automated reporting.
+              <ul class="project-features">
+                <li>Interactive charts</li><li>Segmentation</li><li>Predictive analytics</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <header class="project-header">
+              <h3 class="project-title">Supply Chain Management System</h3>
+              <div class="project-tags">
+                <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">Angular</span>
+              </div>
+            </header>
+            <div class="project-content">
+              Inventory tracking, supplier management, automated procurement with microservices architecture.
+            </div>
+            <div class="project-links">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Education</h2>
+          <p class="page-subtitle">Academic journey and continuous learning</p>
+        </div>
+        <div class="education-timeline">
+          <article class="education-item">
+            <div class="education-date"><span class="date-badge">2020 - 2024</span></div>
+            <div class="education-details">
+              <h3 class="degree-title">B.E. in Computer Engineering</h3>
+              <h4 class="school-name">Mumbai University</h4>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Skills</h2>
+          <p class="page-subtitle">Technologies and tools</p>
+        </div>
+        <div class="skills-grid-simple">
+          <div class="skill-chip">JavaScript</div>
+          <div class="skill-chip">Python</div>
+          <div class="skill-chip">Java</div>
+          <div class="skill-chip">React</div>
+          <div class="skill-chip">Node.js</div>
+          <div class="skill-chip">Spring Boot</div>
+          <div class="skill-chip">MySQL</div>
+          <div class="skill-chip">AWS</div>
+          <div class="skill-chip">Docker</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="page-header">
+          <h2 class="page-title">Get In Touch</h2>
+          <p class="page-subtitle">Let's connect and discuss opportunities</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-methods">
+            <div class="contact-item"><div class="contact-icon">📧</div><div class="contact-details">Email<br/>siddesh1patil@gmail.com</div></div>
+            <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-details">Location<br/>Portland, OR, USA</div></div>
+            <div class="contact-item"><div class="contact-icon">💼</div><div class="contact-details">LinkedIn<br/>linkedin.com/in/siddesh-patil-497b50206/</div></div>
+            <div class="social-icons">
+              <a class="social-link" href="https://github.com/Sidshx" target="_blank" rel="noopener">GitHub</a>
+              <a class="social-link" href="https://www.linkedin.com/in/siddesh-patil-497b50206/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="social-link" href="mailto:siddesh1patil@gmail.com" target="_blank" rel="noopener">Email</a>
+            </div>
           </div>
-        </article>
-      </div>
-    </section>
 
-    <section id="skills" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Skills</h2>
-        <p class="page-subtitle">Technologies and tools</p>
-      </div>
-      <div class="skills-grid-simple">
-        <div class="skill-chip">JavaScript</div>
-        <div class="skill-chip">Python</div>
-        <div class="skill-chip">Java</div>
-        <div class="skill-chip">React</div>
-        <div class="skill-chip">Node.js</div>
-        <div class="skill-chip">Spring Boot</div>
-        <div class="skill-chip">MySQL</div>
-        <div class="skill-chip">AWS</div>
-        <div class="skill-chip">Docker</div>
-      </div>
-    </section>
+          <form class="message-form" onsubmit="event.preventDefault();">
+            <div class="form-group"><label for="name">Name *</label><input id="name" name="name" type="text" required /></div>
+            <div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" required /></div>
+            <div class="form-group"><label for="subject">Subject *</label><input id="subject" name="subject" type="text" required /></div>
+            <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="6" required></textarea></div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
 
-    <section id="contact" class="section">
-      <div class="page-header">
-        <h2 class="page-title">Get In Touch</h2>
-        <p class="page-subtitle">Let's connect and discuss opportunities</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-methods">
-          <div class="contact-item"><div class="contact-icon">📧</div><div class="contact-details"><strong>Email</strong><br/>siddesh1patil@gmail.com</div></div>
-          <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-details"><strong>Location</strong><br/>Portland, OR, USA</div></div>
-          <div class="contact-item"><div class="contact-icon">💼</div><div class="contact-details"><strong>LinkedIn</strong><br/>linkedin.com/in/siddesh-patil-497b50206/</div></div>
-          <div class="social-icons">
-            <a class="social-link" href="https://github.com/Sidshx" target="_blank" rel="noopener">GitHub</a>
-            <a class="social-link" href="https://www.linkedin.com/in/siddesh-patil-497b50206/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="social-link" href="mailto:siddesh1pati@gmail.com" target="_blank" rel="noopener">Email</a>
+        <div class="availability">
+          <div class="status-card">
+            <div class="status-indicator available"></div>
+            <div class="status-info">
+              Available for New Opportunities
+              <ul class="status-details">
+                <li>Open to full-time positions</li>
+                <li>Available for internships</li>
+                <li>Interested in collaborations</li>
+                <li>Always learning new technologies</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <form class="message-form" onsubmit="event.preventDefault();">
-          <div class="form-group"><label for="name">Name *</label><input id="name" name="name" type="text" required /></div>
-          <div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" required /></div>
-          <div class="form-group"><label for="subject">Subject *</label><input id="subject" name="subject" type="text" required /></div>
-          <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="6" required></textarea></div>
-          <button class="btn btn-primary" type="submit">Send Message</button>
-        </form>
-      </div>
-      <div class="availability">
-        <div class="status-card">
-          <div class="status-indicator available"></div>
-          <div class="status-info">
-            <strong>Available for New Opportunities</strong>
-            <ul class="status-details">
-              <li>Open to full-time positions</li>
-              <li>Available for internships</li>
-              <li>Interested in collaborations</li>
-              <li>Always learning new technologies</li>
-            </ul>
-          </div>
+
+        <div class="response-grid">
+          <div class="response-item"><div class="response-icon">⚡</div>Quick Response<br/>Typically within 24 hours on business days.</div>
+          <div class="response-item"><div class="response-icon">💬</div>Detailed Discussion<br/>Understanding needs before proposing solutions.</div>
+          <div class="response-item"><div class="response-icon">🎯</div>Professional Approach<br/>Focused, reliable and detail-oriented.</div>
         </div>
-      </div>
-      <div class="response-grid">
-        <div class="response-item"><div class="response-icon">⚡</div><strong>Quick Response</strong><br/>Typically within 24 hours on business days.</div>
-        <div class="response-item"><div class="response-icon">💬</div><strong>Detailed Discussion</strong><br/>Understanding needs before proposing solutions.</div>
-        <div class="response-item"><div class="response-icon">🎯</div><strong>Professional Approach</strong><br/>Focused, reliable and detail-oriented.</div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer">© 2025 Siddesh Patil. All rights reserved.</footer>
+    <footer class="footer">© 2025 Siddesh Patil. All rights reserved.</footer>
 
-  <script>
-    // Smooth scroll active state update
-    const links = document.querySelectorAll('.nav-link');
-    const sections = [...document.querySelectorAll('section')];
-    const setActive = () => {
-      const y = window.scrollY + 100;
-      let activeId = sections[0]?.id;
-      for (const s of sections) {
-        const top = s.offsetTop; const bottom = top + s.offsetHeight;
-        if (y >= top && y < bottom) activeId = s.id;
-      }
-      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + activeId));
-    };
-    window.addEventListener('scroll', setActive);
-    window.addEventListener('load', setActive);
-  </script>
-</body>
+    <script>
+      // Smooth scroll active state update
+      const links = document.querySelectorAll('.nav-link');
+      const sections = [...document.querySelectorAll('section')];
+      const setActive = () => {
+        const y = window.scrollY + 100;
+        let activeId = sections[0]?.id;
+        for (const s of sections) {
+          const top = s.offsetTop; const bottom = top + s.offsetHeight;
+          if (y >= top && y < bottom) activeId = s.id;
+        }
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + activeId));
+      };
+      window.addEventListener('scroll', setActive);
+      window.addEventListener('load', setActive);
+    </script>
+  </body>
 </html>
