@@ -81,7 +81,19 @@ body::before{
 
 /* Skills */
 .skills-grid-simple{display:flex; flex-wrap:wrap; gap:12px}
-.skill-chip{border:1px solid var(--border); background:rgba(15,23,42,0.6); color:var(--text); padding:8px 12px; border-radius:999px}
+.skill-chip {
+  background: rgba(34,211,238,0.12); /* Use accent color as a subtle fill */
+  border: 1px solid var(--accent);   /* Accent border for visibility */
+  color: var(--text);                /* Consistent readable text */
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.skill-chip:hover {
+  background: rgba(34,211,238,0.25); /* Stronger accent on hover */
+  box-shadow: 0 2px 12px rgba(34,211,238,0.08);
+}
+
 
 /* Contact */
 .contact-grid{display:grid; grid-template-columns: 1.2fr 1fr; gap:32px}
