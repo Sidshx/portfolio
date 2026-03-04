@@ -46,11 +46,15 @@
         <h2 class="page-title">About Me</h2>
         <p class="page-subtitle">Computer Architecture · Validation · Design Verification</p>
       </div>
+      
       <div class="about-grid">
+        <!-- Photo Container -->
         <div class="about-photo">
           <img src="IMG_20240928_183821_470.jpg" alt="Siddesh Patil profile photo" class="profile-img"/>
+        </div> <!-- ✅ ADDED THIS MISSING CLOSING DIV -->
         
-         <div class="about-text">
+        <!-- Text Container -->
+        <div class="about-text">
           <p><strong>Hi, I'm Siddesh.</strong></p>
           
           <p>I build comprehensive verification environments to relentlessly stress-test complex architectures—hunting down corner-case bugs to ensure clean RTL and first-pass silicon success. Currently pursuing my M.S. in ECE at <strong>Portland State University</strong>, I bridge the gap between pre-silicon simulation and hardware validation.</p>
@@ -64,8 +68,10 @@
           
           <p>🚀 <em>I am actively seeking FTE roles in <strong>Design Verification</strong> and <strong>Silicon Validation</strong> starting <strong>June 2026</strong>.</em></p>
         </div>
-
+      </div> <!-- ✅ ADDED CLOSING DIV FOR about-grid -->
     </section>
+</main>
+
 
     <!-- RESTORED EXPERIENCE (before Projects) -->
     <section class="section" id="experience">
